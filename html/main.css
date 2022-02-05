@@ -1,0 +1,562 @@
+body {
+    font-family: sans-serif;
+    outline: none;
+}
+
+#container {
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-image: url("img/background.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    border-radius: 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#gangwindow {
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-image: url("img/background.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#mafiawindow {
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-image: url("img/background.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#cartelwindow {
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-image: url("img/background.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#inputgang {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(255, 218, 6);
+    width: 50%;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 24px;
+}
+
+#submitgang {
+    transform: translate(-50%, -50%);
+    left: 20%;
+    top: 37.5%;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    background: linear-gradient(90deg, #ffd900, #ffd900);
+    margin-top: 150px;
+    margin-left: 230px;
+    width: 150px;
+    height: 60px;
+}
+
+#inputmafia {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(255, 6, 6);
+    width: 50%;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 24px;
+}
+
+#submitmafia {
+    transform: translate(-50%, -50%);
+    left: 20%;
+    top: 37.5%;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    background: linear-gradient(90deg, #ff0000, #dc0000fa);
+    margin-top: 150px;
+    margin-left: 230px;
+    width: 150px;
+    height: 60px;
+}
+
+#inputcartel {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(2, 141, 255);
+    width: 50%;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 24px;
+}
+
+#submitcartel {
+    transform: translate(-50%, -50%);
+    left: 20%;
+    top: 37.5%;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    background: linear-gradient(90deg, #5f97ff, #00a9dcfa);
+    margin-top: 150px;
+    margin-left: 230px;
+    width: 150px;
+    height: 60px;
+}
+
+#logo {
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -20%;
+    position: absolute;
+    z-index: 2;
+}
+
+#gangbutton {
+    transform: translate(-50%, -50%);
+    left: 17.5%;
+    top: 60%;
+    position: absolute;
+    border-radius: 0px;
+    transition: .5s;
+}
+
+#mafiabutton {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#mafiamax {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+    position: absolute;
+    text-transform: capitalize;
+    width: 250px;
+    height: 35px;
+    border: none;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    background-color: rgb(42, 42, 42);
+    font-size: 15px;
+    transition: .4s;
+}
+
+#mafiaxp {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#gangmax {
+    transform: translate(-50%, -50%);
+    left: 17.5%;
+    top: 90%;
+    position: absolute;
+    text-transform: capitalize;
+    width: 250px;
+    height: 35px;
+    border: none;
+    color: rgb(255, 217, 0);
+    text-shadow: 0px 0px 10px rgb(255, 217, 0);
+    background-color: rgb(42, 42, 42);
+    font-size: 15px;
+    transition: .4s;
+}
+
+#gangxp {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#cartelmax {
+    transform: translate(-50%, -50%);
+    left: 82.5%;
+    top: 90%;
+    position: absolute;
+    text-transform: capitalize;
+    width: 250px;
+    height: 35px;
+    border: none;
+    color: rgb(0, 132, 255);
+    text-shadow: 0px 0px 10px rgb(0, 132, 255);
+    background-color: rgb(42, 42, 42);
+    font-size: 15px;
+    transition: .4s;
+}
+
+#cartelxp {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#close {
+    transform: translate(-50%, -50%);
+    left: 97%;
+    top: 4%;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    z-index: 10;
+    transition: .4s;
+}
+
+#close:hover {
+    box-shadow: 0px 0px 10px red;
+}
+
+#closegang {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#closegang:hover {
+    box-shadow: 0px 0px 10px rgb(3, 3, 3);
+}
+
+#closemafia {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#closemafia:hover {
+    box-shadow: 0px 0px 10px rgb(3, 3, 3);
+}
+
+#closecartel {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#closecartel:hover {
+    box-shadow: 0px 0px 10px rgb(3, 3, 3);
+}
+
+#cartelbutton {
+    transform: translate(-50%, -50%);
+    left: 82.5%;
+    top: 60%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#lolos {
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    left: 25%;
+    top: 32%;
+    position: absolute;
+    z-index: 2;
+}
+
+#logoBg {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(40, 40, 40);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 34%;
+    border-radius: 0%;
+    position: absolute;
+    box-shadow: 0 0 10px 0.2rem rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#startWashingButton {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(49, 170, 28);
+    font-size: 20px;
+    z-index: 10;
+    transition: .4s;
+}
+
+#startWashingButton:hover {
+    box-shadow: 0 0 0 0.15rem rgb(255, 255, 255);
+    transition: .3s;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+#blackmoneyInfo {
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+    position: absolute;
+    left: 120px;
+    bottom: 180px;
+}
+
+#washingInfoCostInfo {
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+    position: absolute;
+    right: 120px;
+    bottom: 180px;
+}
+
+#washingCost {
+    font-size: 75px;
+    position: absolute;
+    right: 110px;
+    bottom: 180px;
+}
+
+#blackMoney {
+    font-size: 75px;
+    position: absolute;
+    left: 95px;
+    width: 200px;
+    text-align: center;
+    bottom: 180px;
+}
+
+#successWindow {
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 230px;
+    background: rgb(9, 71, 243);
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: white;
+    border-radius: 20px;
+    z-index: 5;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#successWindow i {
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#successWindow button {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 74%;
+    position: absolute;
+    width: 160px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: rgba(40, 40, 40);
+    font-size: 20px;
+    z-index: 10;
+    transition: .4s;
+}
+
+#successWindow button:hover {
+    box-shadow: 0 0 0 0.3rem rgb(255, 255, 255);
+    transition: .3s;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+#loadingSreen {
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 230px;
+    background: rgb(9, 71, 243);
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: white;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: 0px 0px 100px 1px #272727;
+}
+
+#loadingSreen i {
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 43.5%;
+    top: 35%;
+}
+
+#loadingSreen h2 {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    font-size: 20px;
+}
+
+#moreOptions {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: rgba(40, 40, 40);
+    font-size: 20px;
+    z-index: 10;
+    transition: .4s;
+}
+
+#moreOptions:hover {
+    box-shadow: 0 0 0 0.3rem rgb(255, 217, 0);
+    transition: .3s;
+    width: 260px;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+#moreOptionsDiv {
+    width: 250px;
+    height: 300px;
+    background: linear-gradient( rgba(40, 40, 40) 20%, rgba(40, 40, 40));
+    z-index: 11;
+    left: 375px;
+    top: 30px;
+    position: relative;
+    box-shadow: 0 0 10px 0.2rem rgba(255, 255, 255, 0.267);
+}
+
+#moreOptionsDiv h2 {
+    width: 100%;
+    text-align: center;
+    top: 20px;
+    position: absolute;
+}
+
+#amountOfBlackMoney {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: rgb(36, 224, 99) 100%;
+    text-align: center;
+}
+
+#moreOptionsDiv p {
+    color: rgb(148, 148, 148);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 130px;
+}
+
+#moreOptionsDiv button {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    height: 50px;
+    background-color: rgb(36, 224, 99) 100%;
+    color: white;
+    border: none;
+    font-size: 20px;
+    transition: .3s;
+    outline: none;
+}
+
+#moreOptionsDiv button:hover {
+    box-shadow: 0 0 0 0.3rem rgb(255, 217, 0);
+    transition: .3s;
+}
